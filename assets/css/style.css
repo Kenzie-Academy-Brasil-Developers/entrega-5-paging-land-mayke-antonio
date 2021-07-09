@@ -27,8 +27,6 @@ family=Lato -> Títulos, textos
     @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     /* FONTS */
     /* VARIÁVEIS */
-    
-     :root {}
     /* GERAL */
     
     html,
@@ -233,26 +231,188 @@ family=Lato -> Títulos, textos
         border-top: solid 1px #818181;
     }
     /* SESSÃO MAYKEL */
+    
+    .topo,
+    .largeContainer,
+    .secaoDestaque,
+    .secaoDestaqueFormulario {
+        background-color: #00043e;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    
+    figcaption {
+        display: none;
+    }
+    
+    .topo figure {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+    
+    .topo .logo {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    .topo .menu {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .topo nav {
+        display: flex;
+        justify-content: flex-end;
+        text-align: right;
+        display: none;
+    }
+    
+    .largeContainer,
+    .secaoDestaque,
+    .secaoDestaqueFormulario {
+        display: flex;
+        align-items: center;
+    }
+    
+    .secaoDestaque h2 {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        max-width: 75%;
+    }
+    
+    .secaoDestaque p {
+        font-weight: 200;
+        margin: 1rem;
+    }
+    
+    .secaoDestaqueFormulario {
+        flex-direction: row;
+        margin-bottom: 5rem;
+    }
+    
+    .secaoDestaqueFormulario input {
+        padding: 7px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border: none;
+    }
+    
+    .secaoDestaqueFormulario input::placeholder {
+        color: #818181;
+    }
+    
+    .secaoDestaqueFormulario button {
+        background-color: #007aff;
+        color: white;
+        border: none;
+        padding: 7.6px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    
+    .secaoContato .flex {
+        background-color: #f1f1f1;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.5rem;
+    }
+    
+    .secaoContato .flex h2 {
+        margin-bottom: 1rem;
+    }
+    
+    .secaoContato .flex .flex-col {
+        font-size: 0.8rem;
+        font-family: 'lato';
+        color: #818181;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    
+    label {
+        display: none;
+    }
+    
+    .secaoContato .flex a:link {
+        text-decoration: none;
+        color: #818181;
+    }
+    
+    .secaoContato .flex li {
+        display: flex;
+        align-items: center;
+    }
+    
+    .secaoContato .flex .icon {
+        width: 0.8rem;
+        color: #818181;
+        margin-right: 3px;
+        filter: opacity(50%);
+    }
+    
+    .secaoContato .flex h2 {
+        color: #3b3b3b;
+        text-transform: uppercase;
+    }
+    
+    .flex-col form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .form-input-model {
+        width: 100%;
+    }
+    
+    .form-input-model input,
+    .form-input-model textarea {
+        padding: 0.3rem 0.8rem;
+        border-radius: 3px;
+        border: 1px solid #adadad;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    
+    .form-input-model textarea {
+        height: 7rem;
+        margin-bottom: 20px;
+    }
+    
+    .flex-col .button {
+        padding: 0.5rem;
+        background-color: #ffffff;
+        border: 1px solid #adadad;
+        border-radius: 3px;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    footer img {
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+    
+    footer a {
+        font-size: 5px;
+    }
     /* FIM SESSAO MAYKEL */
-    /* para estilizar a scrollbar */
-    
-     ::-webkit-scrollbar {}
-    
-     ::-webkit-scrollbar-button {}
-    
-     ::-webkit-scrollbar-track {}
-    
-     ::-webkit-scrollbar-track-piece {}
-    
-     ::-webkit-scrollbar-thumb {}
-    
-     ::-webkit-scrollbar-corner {}
-    
-     ::-webkit-resizer {}
-    /* EXTRAS */
-    /* MEDIA QUERIES */
-    
-    @media screen and (min-width: 400px) {}
-    
-    @media screen and (min-width: 800px) {}
-    /* MEDIA QUERIES */

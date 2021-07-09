@@ -11,14 +11,12 @@
 </head>
 
 <body>
-
-    <!-- CABEÇALHO -->
     <header class="topo">
-
         <div class="large-container">
             <!-- LOGO -->
             <figure>
-                <img src="assets/img/logo.svg" alt="Logo Kenzie Academy">
+                <img class="logo" src="assets/img/logo.svg" alt="Logo Kenzie Academy">
+                <img class="menu" src="https://img.icons8.com/ultraviolet/40/000000/xbox-menu.png" />
                 <figcaption>Logo Kenzie Academy</figcaption>
             </figure>
 
@@ -201,14 +199,18 @@
                     </div>
                 </li>
 
-            </ul>
+
+
+                </article>
 
         </section>
+
+
 
         <section class="secaoContato">
 
             <div class="flex">
-
+                <h2>Contact</h2>
                 <!-- COLUNA LADO ESQUERDO -->
                 <div class="flex-col">
 
@@ -217,9 +219,18 @@
                         <p>Contact us and we'll get back to you within 24 hours.</p>
 
                         <ul>
-                            <li><a href="#">Chicago, US</a> </li>
-                            <li><a href="tel:001515151515">+00 1515151515</a></li>
-                            <li><a href="malito:myemail@something.com">myemail@something.com</a></li>
+                            <li>
+                                <img class="icon" src="https://img.icons8.com/material-rounded/24/000000/marker.png" />
+                                <a href="#">Chicago, US</a>
+                            </li>
+                            <li>
+                                <img class="icon" src="https://img.icons8.com/material-rounded/24/000000/cell-phone.png" />
+                                <a href="tel:001515151515">+00 1515151515</a>
+                            </li>
+                            <li>
+                                <img class="icon" src="https://img.icons8.com/ios-filled/50/000000/new-post.png" />
+                                <a href="malito:myemail@something.com">myemail@something.com</a>
+                            </li>
                         </ul>
 
                     </div>
@@ -228,8 +239,6 @@
 
                 <!-- COLUNA LADO DIRETO -->
                 <div class="flex-col">
-
-                    <h2>Contact</h2>
 
                     <form action="">
 
@@ -245,10 +254,10 @@
 
                         <div class="form-input-model">
                             <label for="mensagem">E-mail</label>
-                            <textarea name="mensagem" id="mensagem"></textarea>
+                            <textarea name="mensagem" id="mensagem" placeholder="Comment"></textarea>
                         </div>
 
-                        <input type="submit" value="Send">
+                        <input class='button' type="submit" value="Send">
 
                     </form>
 
@@ -261,7 +270,9 @@
     </main>
 
     <footer>
-        <p>Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a></p>
+        <p class="hidden">Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a></p>
+        <img src="https://img.icons8.com/ios-glyphs/30/4a90e2/circled-up.png" />
+        <a href="https://icons8.com/icon/84026/cardápio">Cardápio icon by Icons8</a>
     </footer>
 
     <script src="assets/js/script.js"></script>
