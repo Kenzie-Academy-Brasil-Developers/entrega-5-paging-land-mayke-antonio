@@ -500,6 +500,9 @@ family=Lato -> Títulos, textos
         li {
             margin: 1%;
         }
+        .fundocinza {
+            width: 100vw;
+        }
         .secaoCursos {
             margin-top: -15%;
         }
