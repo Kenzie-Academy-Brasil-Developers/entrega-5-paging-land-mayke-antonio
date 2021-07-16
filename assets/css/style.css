@@ -1,4 +1,4 @@
-    /*
+/*
 Theme Name: Landing Page Kenzie Academy
 Theme URI: https://kenzie.com.br/
 Author: Kenzie Academy 
@@ -22,572 +22,623 @@ ESTRUTURAÇÃO BASE
 family=Montserrat -> Menus
 family=Lato -> Títulos, textos
 */
-    /* FONTS */
-    
-    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    /* FONTS */
-    /* VARIÁVEIS */
-    /* GERAL */
-    
-    html,
-    body,
-    figure,
-    div,
-    input,
-    textarea,
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    ul {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-        list-style: none;
-    }
-    
-    img {
-        max-width: 800px;
-    }
-    
-    div.flex {
-        display: flex;
-    }
-    
-    div.full-container {
-        width: 100%;
-        max-width: 1850px;
-        margin: 0 auto;
-    }
-    
-    div.large-container {
-        width: 100%;
-        max-width: 1170px;
-        margin: 0 auto;
-    }
-    
-    div.container {
-        width: 100%;
-        max-width: 1140px;
-        margin: 0 auto;
-    }
-    /* GERAL */
-    /* SESSÃO ANTONIO */
-    
-    body {
-        font-family: 'Lato';
-    }
-    
-    .secaoSobre {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
-    
-    .flex-col h2,
-    .flex-col p,
-    .flex-col span,
-    .flex-col button {
-        margin: 10%;
-    }
-    
-    .secaoSobre article div h2 {
-        font-size: 24px;
-    }
-    
-    .secaoSobre article div p {
-        font-size: 19px;
-    }
-    
-    .secaoSobre article div span {
-        font-size: 19px;
-        color: #818181;
-    }
-    
-    .flex-col {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .flex-col h2 {
-        font-size: 24px;
-    }
-    
-    .flex-col p,
-    span {
-        text-align: left;
-    }
-    
-    .list1 li {
-        font-size: 19px;
-    }
-    
-    article p {
-        font-size: 19px;
-    }
-    
-    .courses li h3 {
-        font-size: 19px;
-    }
-    
-    .courses li p {
-        font-size: 15px;
-        color: #818181;
-    }
-    
-    .subscribe2 {
-        background-color: white;
-        border: solid 2px #818181;
-        border-radius: 10px;
-        width: 70%;
-        padding: 5%;
-    }
-    
-    .secaoSobre article div figure figcaption {
-        visibility: hidden;
-    }
-    
-    .figure1 img {
-        max-width: 70%;
-    }
-    
-    .figure2 img {
-        max-width: 30%;
-    }
-    
-    .fundocinza {
-        background-color: #F1F1F1;
-        padding-top: 10%;
-    }
-    
-    .fundocinza h2 {
-        text-align: center;
-    }
-    
-    .list1 {
-        padding: 10%;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style-position: outside;
-        list-style-type: disc;
-        text-align: justify;
-        line-height: 150%;
-        color: #818181;
-    }
-    
-    .secaoCursos {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-    }
-    
-    .secaoCursos article ul li img {
-        max-width: 40%;
-    }
-    
-    .secaoCursos h2,
-    li,
-    li img,
-    li h3,
-    li p {
-        margin: 10%;
-    }
-    
-    .courses {
-        margin: 10%;
-    }
-    
-    .secaoCalendar {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-content: center;
-    }
-    
-    .secaoCalendar h2 {
-        margin: 10%;
-    }
-    
-    .calendario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .li-calendar {
-        border: solid 2px #00043e;
-        max-width: 50%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .li-calendar h3 {
-        font-size: 19px;
-    }
-    
-    .li-calendar h3,
-    .li-calendar p,
-    .li-calendar div span {
-        margin: 10%
-    }
-    
-    .li-calendar p {
-        font-size: 15px;
-    }
-    
-    .calendario-data {
-        background-color: #00043e;
-        color: white;
-        font-size: 36px;
-        width: 100%;
-        align-self: center;
-        text-align: center;
-        margin-top: 0;
-    }
-    
-    .signUpCalendar {
-        background-color: #007aff;
-        color: white;
-        width: 90%;
-        font-size: 80%;
-        border: none;
-        padding: 5% 25% 5% 25%;
-        border-radius: 6px;
-        margin: 10%
-    }
-    
-    .calendario-data-rodape {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-top: solid 1px #818181;
-        color: #818181;
-    }
-    
-    .calendario-data-rodape span {
-        font-size: 32px;
-    }
-    
-    .calendario-p {
-        color: #818181;
-    }
-    /* SESSÃO MAYKEL */
-    
-    .topo,
-    .largeContainer,
-    .secaoDestaque,
-    .secaoDestaqueFormulario {
-        background-color: #00043e;
-        display: flex;
-        flex-direction: column;
-        color: white;
-    }
-    
-    figcaption {
-        display: none;
-    }
-    
-    .topo figure {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.5rem;
-    }
-    
-    .topo .logo {
-        width: 4rem;
-        height: 4rem;
-    }
-    
-    .topo .menu {
-        width: 2rem;
-        height: 2rem;
-    }
-    
-    .topo nav {
-        display: flex;
-        justify-content: flex-end;
-        text-align: right;
-        display: none;
-    }
-    
-    .largeContainer,
-    .secaoDestaque,
-    .secaoDestaqueFormulario {
-        display: flex;
-        align-items: center;
-    }
-    
-    .secaoDestaque h2 {
-        text-align: center;
-        font-family: 'Montserrat';
-        font-weight: 500;
-        max-width: 75%;
-    }
-    
-    .secaoDestaque p {
-        font-weight: 200;
-        margin: 1rem;
-    }
-    
-    .secaoDestaqueFormulario {
-        flex-direction: row;
-        margin-bottom: 5rem;
-    }
-    
-    .secaoDestaqueFormulario input {
-        padding: 7px;
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
-        border: none;
-    }
-    
-    .secaoDestaqueFormulario input::placeholder {
-        color: #818181;
-    }
-    
-    .secaoDestaqueFormulario button {
-        background-color: #007aff;
-        color: white;
-        border: none;
-        padding: 7.6px;
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
-    }
-    
-    .secaoContato .flex {
-        background-color: #f1f1f1;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        line-height: 1.5rem;
-    }
-    
-    .secaoContato .flex h2 {
-        margin-bottom: 1rem;
-    }
-    
-    .secaoContato .flex .flex-col {
-        font-size: 0.8rem;
-        font-family: 'lato';
-        color: #818181;
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-    }
-    
-    label {
-        display: none;
-    }
-    
-    .secaoContato .flex a:link {
-        text-decoration: none;
-        color: #818181;
-    }
-    
-    .secaoContato .flex li {
-        display: flex;
-        align-items: center;
-    }
-    
-    .secaoContato .flex .icon {
-        width: 0.8rem;
-        color: #818181;
-        margin-right: 3px;
-        filter: opacity(50%);
-    }
-    
-    .secaoContato .flex h2 {
-        color: #3b3b3b;
-        text-transform: uppercase;
-    }
-    
-    .flex-col form {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    
-    .form-input-model {
-        width: 100%;
-    }
-    
-    .form-input-model input,
-    .form-input-model textarea {
-        padding: 0.3rem 0.8rem;
-        border-radius: 3px;
-        border: 1px solid #adadad;
-        width: 100%;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        font-size: 12px;
-    }
-    
-    .form-input-model textarea {
-        height: 7rem;
-        margin-bottom: 20px;
-    }
-    
-    .flex-col .button {
-        padding: 0.5rem;
-        background-color: #ffffff;
-        border: 1px solid #adadad;
-        border-radius: 3px;
-    }
-    
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .hidden {
-        display: none;
-    }
-    
-    footer img {
-        width: 2rem;
-        height: 2rem;
-        margin-bottom: 1rem;
-        margin-top: 2rem;
-    }
-    
-    footer a {
-        font-size: 5px;
-    }
-    /* FIM SESSAO MAYKEL */
-    
-    @media (min-width: 1024px) {
-        .flex-article {
-            display: flex;
-            flex-direction: row;
-            max-width: 100%;
-            flex-wrap: wrap;
-        }
-        .flex-col {
-            max-width: 50%;
-            display: flex;
-            text-align: center;
-        }
-        .flex-col h2,
-        p,
-        span,
-        button {
-            margin: -5%;
-        }
-        .flex-col span,
-        button {
-            margin-top: -5%;
-        }
-        .flex-col button {
-            margin-top: -5%;
-        }
-        .fundocinza ul,
-        li {
-            margin: 1%;
-        }
-        .fundocinza {
-            width: 100vw;
-        }
-        .secaoCursos {
-            margin-top: -15%;
-        }
-        .courses {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        .courses li {
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        .secaoCalendar {
-            margin-top: -20%;
-        }
-        .secaoCalendar p {
-            margin-top: -8%;
-        }
-        .calendario {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-content: center;
-            margin-top: 8%;
-        }
-        .calendario li {
-            max-width: 20%;
-        }
-        .courses .li1 h3 {
-            margin-top: 30%;
-        }
-        .courses .li5 h3 {
-            margin-top: -4%;
-        }
-        .courses li p {
-            margin-top: -4%;
-        }
-    }
-    
-    @media only screen and (min-width: 1024px) {
-        .secaoContato {
-            position: relative;
-        }
-        .secaoContato .flex {
-            flex-direction: row;
-            flex-wrap: nowrap;
-            align-items: flex-start;
-        }
-        .secaoContato .flex h2 {
-            position: absolute;
-            top: 2rem;
-            right: 35vw;
-        }
-        .flex-col form {
-            position: relative;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            align-content: flex-start;
-            height: 200px;
-            padding-right: 1rem;
-        }
-        .flex-col form .form-input-model:nth-child(1) {
-            margin-right: 2vw;
-        }
-        .flex-col form:nth-child(3) {
-            width: 50vw;
-        }
-        .form-input-model {
-            width: 23vw;
-        }
-        .form-input-model input {
-            width: 24vw;
-        }
-        .form-input-model textarea {
-            width: 49vw;
-        }
-        .flex-col .button {
-            position: absolute;
-            right: 1rem;
-            bottom: 0rem;
-        }
-    }
-    /* FIM SESSAO MAYKEL */
+/* FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* FONTS */
+/* VARIÁVEIS */
+/* GERAL */
+
+html,
+body,
+figure,
+div,
+input,
+textarea,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+}
+
+img {
+  max-width: 800px;
+}
+
+div.flex {
+  display: flex;
+}
+
+div.full-container {
+  width: 100%;
+  max-width: 1850px;
+  margin: 0 auto;
+}
+
+div.large-container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+div.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* GERAL */
+/* SESSÃO ANTONIO */
+
+body {
+  font-family: "Lato";
+}
+
+.secaoSobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.flex-col h2,
+.flex-col p,
+.flex-col span,
+.flex-col button {
+  margin: 10%;
+}
+
+.secaoSobre article div h2 {
+  font-size: 24px;
+}
+
+.secaoSobre article div p {
+  font-size: 19px;
+}
+
+.secaoSobre article div span {
+  font-size: 19px;
+  color: #818181;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-col h2 {
+  font-size: 24px;
+}
+
+.flex-col p,
+span {
+  text-align: left;
+}
+
+.list1 li {
+  font-size: 19px;
+}
+
+article p {
+  font-size: 19px;
+}
+
+.courses li h3 {
+  font-size: 19px;
+}
+
+.courses li p {
+  font-size: 15px;
+  color: #818181;
+}
+
+.subscribe2 {
+  background-color: white;
+  border: solid 2px #818181;
+  border-radius: 10px;
+  width: 70%;
+  padding: 5%;
+}
+
+.secaoSobre article div figure figcaption {
+  visibility: hidden;
+}
+
+.figure1 img {
+  max-width: 70%;
+}
+
+.figure2 img {
+  max-width: 30%;
+}
+
+.fundocinza {
+  background-color: #f1f1f1;
+  padding-top: 10%;
+}
+
+.fundocinza h2 {
+  text-align: center;
+}
+
+.list1 {
+  padding: 10%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-position: outside;
+  list-style-type: disc;
+  text-align: justify;
+  line-height: 150%;
+  color: #818181;
+}
+
+.secaoCursos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.secaoCursos article ul li img {
+  max-width: 40%;
+}
+
+.secaoCursos h2,
+li,
+li img,
+li h3,
+li p {
+  margin: 10%;
+}
+
+.courses {
+  margin: 10%;
+}
+
+.secaoCalendar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.secaoCalendar h2 {
+  margin: 10%;
+}
+
+.calendario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.li-calendar {
+  border: solid 2px #00043e;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.li-calendar h3 {
+  font-size: 19px;
+}
+
+.li-calendar h3,
+.li-calendar p,
+.li-calendar div span {
+  margin: 10%;
+}
+
+.li-calendar p {
+  font-size: 15px;
+}
+
+.calendario-data {
+  background-color: #00043e;
+  color: white;
+  font-size: 36px;
+  width: 100%;
+  align-self: center;
+  text-align: center;
+  margin-top: 0;
+}
+
+.signUpCalendar {
+  background-color: #007aff;
+  color: white;
+  width: 90%;
+  font-size: 80%;
+  border: none;
+  padding: 5% 25% 5% 25%;
+  border-radius: 6px;
+  margin: 10%;
+}
+
+.calendario-data-rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: solid 1px #818181;
+  color: #818181;
+}
+
+.calendario-data-rodape span {
+  font-size: 32px;
+}
+
+.calendario-p {
+  color: #818181;
+}
+/* SESSÃO MAYKEL */
+
+.topo,
+.largeContainer,
+.secaoDestaque,
+.secaoDestaqueFormulario {
+  background-color: #00043e;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+figcaption {
+  display: none;
+}
+
+.topo figure {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.topo .logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.topo .menu {
+  width: 2rem;
+  height: 2rem;
+}
+
+.topo nav {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  display: none;
+}
+
+.largeContainer,
+.secaoDestaque,
+.secaoDestaqueFormulario {
+  display: flex;
+  align-items: center;
+}
+
+.secaoDestaque h2 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 500;
+  max-width: 75%;
+}
+
+.secaoDestaque p {
+  font-weight: 200;
+  margin: 1rem;
+}
+
+.secaoDestaqueFormulario {
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+
+.secaoDestaqueFormulario input {
+  padding: 7px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: none;
+}
+
+.secaoDestaqueFormulario input::placeholder {
+  color: #818181;
+}
+
+.secaoDestaqueFormulario button {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  padding: 7.6px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.secaoContato .flex {
+  background-color: #f1f1f1;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5rem;
+}
+
+.secaoContato .flex h2 {
+  margin-bottom: 1rem;
+}
+
+.secaoContato .flex .flex-col {
+  font-size: 0.8rem;
+  font-family: "lato";
+  color: #818181;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+label {
+  display: none;
+}
+
+.secaoContato .flex a:link {
+  text-decoration: none;
+  color: #818181;
+}
+
+.secaoContato .flex li {
+  display: flex;
+  align-items: center;
+}
+
+.secaoContato .flex .icon {
+  width: 0.8rem;
+  color: #818181;
+  margin-right: 3px;
+  filter: opacity(50%);
+}
+
+.secaoContato .flex h2 {
+  color: #3b3b3b;
+  text-transform: uppercase;
+}
+
+.flex-col form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.form-input-model {
+  width: 100%;
+}
+
+.form-input-model input,
+.form-input-model textarea {
+  padding: 0.3rem 0.8rem;
+  border-radius: 3px;
+  border: 1px solid #adadad;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.form-input-model textarea {
+  height: 7rem;
+  margin-bottom: 20px;
+}
+
+.flex-col .button {
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border: 1px solid #adadad;
+  border-radius: 3px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+footer img {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  font-size: 5px;
+}
+/* FIM SESSAO MAYKEL */
+
+@media (min-width: 1024px) {
+  .flex-article {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .flex-col {
+    max-width: 50%;
+    display: flex;
+    text-align: center;
+  }
+  .flex-col h2,
+  p,
+  span,
+  button {
+    margin: -5%;
+  }
+  .flex-col span,
+  button {
+    margin-top: -5%;
+  }
+  .flex-col button {
+    margin-top: -5%;
+  }
+  .fundocinza ul,
+  li {
+    margin: 1%;
+  }
+  .fundocinza {
+    width: 100vw;
+  }
+  .secaoCursos {
+    margin-top: -15%;
+  }
+  .courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .courses li {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .secaoCalendar {
+    margin-top: -20%;
+  }
+  .secaoCalendar p {
+    margin-top: -8%;
+  }
+  .calendario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 8%;
+  }
+  .calendario li {
+    max-width: 20%;
+  }
+  .courses .li1 h3 {
+    margin-top: 30%;
+  }
+  .courses .li5 h3 {
+    margin-top: -4%;
+  }
+  .courses li p {
+    margin-top: -4%;
+  }
+  .topo .large-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 4rem;
+  }
+  .topo .large-container .logo {
+    width: 2.5rem;
+  }
+  .topo .large-container .menu {
+    display: none;
+    align-items: center;
+  }
+  .topo .large-container nav {
+    display: flex;
+  }
+  .topo .large-container nav ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 50vw;
+    align-items: center;
+  }
+  .topo .large-container nav li {
+    color: white;
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+  }
+  .topo .large-container nav li a:link {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat";
+  }
+  .topo .large-container nav li:hover {
+    box-shadow: 0 1px white;
+  }
+  .secaoDestaque {
+    background-image: url(/assets/img/background-destaque.webp);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  .secaoContato-informacoes p {
+    width: 90%;
+    margin: 0;
+  }
+  /* .secaoContato-informacoes li {
+    height: 2rem;
+  } */
+  .secaoContato-informacoes li .icon {
+    margin: 0;
+  }
+  .secaoContato {
+    position: relative;
+  }
+  .secaoContato .flex {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .secaoContato .flex h2 {
+    position: absolute;
+    top: 2rem;
+    right: 35vw;
+  }
+  .flex-col form {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 200px;
+    margin-right: 20rem;
+    width: 40vw;
+  }
+  .flex-col form .form-input-model:nth-child(1) {
+    margin-right: 1vw;
+  }
+  .flex-col form:nth-child(3) {
+    width: 50vw;
+  }
+  .form-input-model {
+    width: 48%;
+  }
+  .form-input-model input {
+    width: 100%;
+  }
+  .form-input-model textarea {
+    width: 205%;
+  }
+  .flex-col .button {
+    position: absolute;
+    right: 1rem;
+    bottom: 0rem;
+  }
+}
+/* FIM SESSAO MAYKEL */
