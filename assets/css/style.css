@@ -91,6 +91,13 @@ family=Lato -> Títulos, textos
         padding-bottom: 10%;
     }
     
+    .flex-col h2,
+    .flex-col p,
+    .flex-col span,
+    .flex-col button {
+        margin: 10%;
+    }
+    
     .secaoSobre article div h2 {
         font-size: 24px;
     }
@@ -115,6 +122,11 @@ family=Lato -> Títulos, textos
         font-size: 24px;
     }
     
+    .flex-col p,
+    span {
+        text-align: left;
+    }
+    
     .list1 li {
         font-size: 19px;
     }
@@ -135,8 +147,9 @@ family=Lato -> Títulos, textos
     .subscribe2 {
         background-color: white;
         border: solid 2px #818181;
-        border-radius: 5%;
-        width: 50%;
+        border-radius: 10px;
+        width: 70%;
+        padding: 5%;
     }
     
     .secaoSobre article div figure figcaption {
@@ -184,12 +197,28 @@ family=Lato -> Títulos, textos
         max-width: 40%;
     }
     
+    .secaoCursos h2,
+    li,
+    li img,
+    li h3,
+    li p {
+        margin: 10%;
+    }
+    
+    .courses {
+        margin: 10%;
+    }
+    
     .secaoCalendar {
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
         align-content: center;
+    }
+    
+    .secaoCalendar h2 {
+        margin: 10%;
     }
     
     .calendario {
@@ -201,10 +230,18 @@ family=Lato -> Títulos, textos
     .li-calendar {
         border: solid 2px #00043e;
         max-width: 50%;
+        display: flex;
+        flex-direction: column;
     }
     
     .li-calendar h3 {
         font-size: 19px;
+    }
+    
+    .li-calendar h3,
+    .li-calendar p,
+    .li-calendar div span {
+        margin: 10%
     }
     
     .li-calendar p {
@@ -215,13 +252,21 @@ family=Lato -> Títulos, textos
         background-color: #00043e;
         color: white;
         font-size: 36px;
+        width: 100%;
+        align-self: center;
+        text-align: center;
+        margin-top: 0;
     }
     
     .signUpCalendar {
         background-color: #007aff;
         color: white;
-        width: 100%;
-        font-size: 32px;
+        width: 90%;
+        font-size: 80%;
+        border: none;
+        padding: 5% 25% 5% 25%;
+        border-radius: 6px;
+        margin: 10%
     }
     
     .calendario-data-rodape {
@@ -229,6 +274,15 @@ family=Lato -> Títulos, textos
         flex-direction: column;
         align-items: center;
         border-top: solid 1px #818181;
+        color: #818181;
+    }
+    
+    .calendario-data-rodape span {
+        font-size: 32px;
+    }
+    
+    .calendario-p {
+        color: #818181;
     }
     /* SESSÃO MAYKEL */
     
@@ -416,3 +470,75 @@ family=Lato -> Títulos, textos
         font-size: 5px;
     }
     /* FIM SESSAO MAYKEL */
+    
+    @media (min-width: 1024px) {
+        .flex-article {
+            display: flex;
+            flex-direction: row;
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+        .flex-col {
+            max-width: 50%;
+            display: flex;
+            text-align: center;
+        }
+        .flex-col h2,
+        p,
+        span,
+        button {
+            margin: -5%;
+        }
+        .flex-col span,
+        button {
+            margin-top: -5%;
+        }
+        .flex-col button {
+            margin-top: -5%;
+        }
+        .fundocinza ul,
+        li {
+            margin: 1%;
+        }
+        .secaoCursos {
+            margin-top: -15%;
+        }
+        .courses {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .courses li {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .secaoCalendar {
+            margin-top: -20%;
+        }
+        .secaoCalendar p {
+            margin-top: -8%;
+        }
+        .calendario {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            margin-top: 8%;
+        }
+        .calendario li {
+            max-width: 20%;
+        }
+        .courses .li1 h3 {
+            margin-top: 30%;
+        }
+        .courses .li5 h3 {
+            margin-top: -4%;
+        }
+        .courses li p {
+            margin-top: -4%;
+        }
+    }
