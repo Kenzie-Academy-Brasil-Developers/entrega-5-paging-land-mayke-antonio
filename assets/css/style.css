@@ -545,3 +545,49 @@ family=Lato -> Títulos, textos
             margin-top: -4%;
         }
     }
+    
+    @media only screen and (min-width: 1024px) {
+        .secaoContato {
+            position: relative;
+        }
+        .secaoContato .flex {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+        }
+        .secaoContato .flex h2 {
+            position: absolute;
+            top: 2rem;
+            right: 35vw;
+        }
+        .flex-col form {
+            position: relative;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            align-content: flex-start;
+            height: 200px;
+            padding-right: 1rem;
+        }
+        .flex-col form .form-input-model:nth-child(1) {
+            margin-right: 2vw;
+        }
+        .flex-col form:nth-child(3) {
+            width: 50vw;
+        }
+        .form-input-model {
+            width: 23vw;
+        }
+        .form-input-model input {
+            width: 24vw;
+        }
+        .form-input-model textarea {
+            width: 49vw;
+        }
+        .flex-col .button {
+            position: absolute;
+            right: 1rem;
+            bottom: 0rem;
+        }
+    }
+    /* FIM SESSAO MAYKEL */
